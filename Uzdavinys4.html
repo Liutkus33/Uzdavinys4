@@ -1,12 +1,53 @@
-<!doctype <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
+    <title>Uzdavinys4</title>
+    <style>
+        
+        .container {
+            background-color: aqua;
+            width: 100vw;
+            height: 62.5vw            
+        }
+            
+        }
 
-    <title>Page Title</title>
-  
+        .rectangle {
+            background-color: purple;
+            width: 60vw;
+            height: 25vw;            
+            
+        }
+
+        .block {
+            background-color: blue;
+            width: 25vw;
+            height: 25vw;
+            border: solid 2vw blue;
+            margin: 2vw 0;
+            position:relative
+            
+        }
+
+        .stroked {
+            border: solid 2vw black;            
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>    
+    <div class="block stroked"></div>    
+    <div class="rectangle">
+        <div class="block" style="background-color:red; border: solid 2vw red"></div>
+    </div>      
+    <div class="rectangle stroked"></div> 
+
 </body>
+
 </html>
