@@ -5,34 +5,47 @@
     <meta charset="utf-8" />
     <title>Uzdavinys4</title>
     <style>
-        
         .container {
             background-color: aqua;
             width: 100vw;
-            height: 62.5vw            
-        }
-            
-        }
-
-        .rectangle {
-            background-color: purple;
-            width: 60vw;
-            height: 25vw;            
-            
+            height: 62.5vw;
+            margin: 2vw
         }
 
         .block {
             background-color: blue;
             width: 25vw;
             height: 25vw;
-            border: solid 2vw blue;
             margin: 2vw 0;
-            position:relative
-            
+
+        }
+
+        .rectangle {
+            background-color: purple;
+            width: 60vw;
+            height: 25vw;
+            margin: 2vw
         }
 
         .stroked {
-            border: solid 2vw black;            
+            border: 2vw black solid;
+            margin: 2vw
+        }
+
+        div.block.stroked {
+
+            width: 21vw;
+            height: 21vw;
+        }
+
+        .rectangle>.block {
+            background-color: red;
+
+        }
+
+        div.rectangle.stroked {
+            background-color: yellow;
+            border: none
         }
     </style>
 </head>
@@ -41,12 +54,13 @@
     <div class="container">
         <div class="block"></div>
         <div class="block"></div>
-    </div>    
-    <div class="block stroked"></div>    
+    </div>
+    <div class="block stroked">
+    </div>
     <div class="rectangle">
-        <div class="block" style="background-color:red; border: solid 2vw red"></div>
-    </div>      
-    <div class="rectangle stroked"></div> 
+        <div class="block"></div>
+    </div>
+    <div class="rectangle stroked"></div>
 
 </body>
 
